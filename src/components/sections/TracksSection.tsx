@@ -6,52 +6,52 @@ import Tilt3D from '../animations/Tilt3D';
 
 const tracks = [
     {
-        id: 'ai-ml',
-        title: 'AI & Machine Learning',
-        description: 'Build intelligent systems that learn, adapt, and transform industries.',
-        icon: '🧠',
-        gradient: 'from-purple-500/20 to-pink-500/20',
-        borderColor: 'border-purple-500/30'
-    },
-    {
-        id: 'web3',
-        title: 'Web3 & Blockchain',
-        description: 'Create decentralized apps and protocols for the next generation of the internet.',
-        icon: '⛓️',
+        id: 'smart-cities',
+        title: 'Smart Cities & Urban Innovation',
+        description: 'Build solutions for urban challenges - smart infrastructure, traffic management, and city services.',
+        icon: '🏙️',
         gradient: 'from-blue-500/20 to-cyan-500/20',
         borderColor: 'border-blue-500/30'
     },
     {
+        id: 'digital-governance',
+        title: 'Digital Governance & Public Services',
+        description: 'Create platforms that enhance government services, transparency, and citizen engagement.',
+        icon: '🏛️',
+        gradient: 'from-indigo-500/20 to-purple-500/20',
+        borderColor: 'border-indigo-500/30'
+    },
+    {
+        id: 'ai-data',
+        title: 'AI & Data-Driven Applications',
+        description: 'Leverage artificial intelligence and data analytics to solve complex problems.',
+        icon: '🤖',
+        gradient: 'from-purple-500/20 to-pink-500/20',
+        borderColor: 'border-purple-500/30'
+    },
+    {
         id: 'sustainability',
-        title: 'Climate & Sustainability',
-        description: 'Develop solutions that address environmental challenges and promote sustainability.',
-        icon: '🌍',
+        title: 'Sustainability & Clean Energy',
+        description: 'Develop environmental solutions for clean energy, waste management, and conservation.',
+        icon: '🌱',
         gradient: 'from-green-500/20 to-emerald-500/20',
         borderColor: 'border-green-500/30'
     },
     {
-        id: 'health',
-        title: 'Health & Wellness',
-        description: 'Innovate healthcare technologies that improve lives and accessibility.',
-        icon: '❤️',
+        id: 'healthcare-education',
+        title: 'Healthcare & Education Technology',
+        description: 'Innovate in health and education with accessible, scalable technology solutions.',
+        icon: '🏥',
         gradient: 'from-red-500/20 to-orange-500/20',
         borderColor: 'border-red-500/30'
     },
     {
-        id: 'fintech',
-        title: 'FinTech',
-        description: 'Reimagine financial services with cutting-edge technology solutions.',
-        icon: '💰',
+        id: 'startup-msme',
+        title: 'Startup & MSME Enablement',
+        description: 'Build tools that empower startups and small businesses to scale and succeed.',
+        icon: '🚀',
         gradient: 'from-yellow-500/20 to-amber-500/20',
         borderColor: 'border-yellow-500/30'
-    },
-    {
-        id: 'open',
-        title: 'Open Innovation',
-        description: 'Bring your wildest ideas to life. No boundaries, just pure innovation.',
-        icon: '✨',
-        gradient: 'from-indigo-500/20 to-violet-500/20',
-        borderColor: 'border-indigo-500/30'
     }
 ];
 

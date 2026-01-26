@@ -34,13 +34,14 @@ export default function Footer() {
                     <div className="md:col-span-1">
                         <Link href="/" className="inline-block mb-4">
                             <span className="text-2xl font-bold">
-                                HACK<span className="text-[var(--primary)]">/LORE</span>
+                                HACK<span className="text-[var(--primary)]">LORE</span>
                             </span>
                         </Link>
                         <p className="text-white/50 text-sm leading-relaxed mb-6">
-                            The premier hackathon for builders shaping the kinetic web.
-                            48 hours of innovation, collaboration, and creation.
+                            Hacklore - The Ultimate Innovation Hackathon 2026. A 24-hour
+                            continuous innovation marathon fostering the next generation of founders.
                         </p>
+
                         <div className="flex gap-3">
                             {footerLinks.connect.map((link) => (
                                 <motion.a
@@ -100,7 +101,7 @@ export default function Footer() {
                             Stay Updated
                         </h4>
                         <p className="text-white/50 text-sm mb-4">
-                            Get the latest updates on Hacklore.
+                            Get the latest updates on Hacklore 2026.
                         </p>
                         <form className="flex gap-2">
                             <input
@@ -124,7 +125,7 @@ export default function Footer() {
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="flex items-center gap-2 text-white/40 text-sm">
                         <span>©</span>
-                        <span>2025 Hacklore. Kinetic Design System.</span>
+                        <span>2026 Hacklore. Madhya Pradesh, India.</span>
                     </div>
                     <div className="flex items-center gap-4 text-sm text-white/40">
                         <span>Made with</span>

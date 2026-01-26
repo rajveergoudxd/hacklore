@@ -6,28 +6,28 @@ import ScrollReveal from '../animations/ScrollReveal';
 
 const faqs = [
     {
-        question: 'Who can participate in Hacklore?',
-        answer: 'Hacklore is open to developers, designers, and innovators of all skill levels. Whether you\'re a student, professional, or hobbyist, you\'re welcome to join. Teams can have 2-4 members.'
+        question: 'Who can participate in Innovation & Startup Hackathon 2026?',
+        answer: "The hackathon is open to students and aspiring entrepreneurs from colleges across Madhya Pradesh. Teams can have 2-4 members. Whether you're a developer, designer, or domain expert, you're welcome to join."
     },
     {
         question: 'What are the prizes?',
-        answer: 'We have over $50,000 in cash and prizes! Grand prize is $20,000, with track-specific prizes of $5,000 each. Additional prizes include cloud credits, mentorship sessions, and premium tool subscriptions.'
+        answer: 'We have a total prize pool of ₹60,000! Prizes will be awarded to winning teams across different tracks. Additional outcomes include skill enhancement, networking opportunities, and identification of startup-ready solutions for incubation.'
     },
     {
-        question: 'Is there a participation fee?',
-        answer: 'No! Hacklore is completely free to participate. We provide meals, swag, and an amazing experience at no cost to hackers.'
+        question: 'How does the selection process work?',
+        answer: "After registration, you'll submit a 3-4 slide PPT or 4-5 minute video pitch. Expert panels will review submissions based on innovation, feasibility, and impact. Shortlisted teams will be invited to the 24-hour hackathon."
     },
     {
-        question: 'Can I participate remotely?',
-        answer: 'Yes! Hacklore is a hybrid event. You can join us in San Francisco or participate virtually from anywhere in the world.'
+        question: 'What happens during the 24-hour hackathon?',
+        answer: "It's an intensive development phase where teams work continuously to build functional prototypes. You'll have active mentorship throughout the night from startup mentors and industry experts. No breaks during the 24-hour cycle to simulate a high-pressure product shipping environment."
     },
     {
-        question: 'What should I bring?',
-        answer: 'Bring your laptop, chargers, and enthusiasm! We\'ll provide the rest including power strips, Wi-Fi, food, drinks, and sleeping areas for those who need them.'
+        question: 'What are the judging criteria?',
+        answer: 'Projects are evaluated on: 1) Innovation and technical depth, 2) Practical applicability, 3) Societal or economic impact, and 4) Startup readiness and scalability. Teams present prototype walkthroughs and problem-solution explanations.'
     },
     {
-        question: 'Do I need a team?',
-        answer: 'You can apply with a pre-formed team or as an individual. We\'ll have team formation activities at the start of the event to help solo hackers find teammates.'
+        question: 'What are the focus areas/tracks?',
+        answer: 'There are 6 innovation tracks: Smart Cities & Urban Innovation, Digital Governance & Public Services, AI & Data-Driven Applications, Sustainability & Clean Energy, Healthcare & Education Technology, and Startup & MSME Enablement.'
     }
 ];
 

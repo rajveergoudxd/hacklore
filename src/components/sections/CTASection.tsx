@@ -28,13 +28,13 @@ export default function CTASection() {
 
                 <ScrollReveal delay={0.1}>
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-                        Ready to <span className="gradient-text">build</span>?
+                        Ready to <span className="gradient-text">innovate</span>?
                     </h2>
                 </ScrollReveal>
 
                 <ScrollReveal delay={0.2}>
                     <p className="text-xl md:text-2xl text-white/60 mb-12 max-w-xl mx-auto">
-                        Join 1,000+ innovators this October. Applications are open now.
+                        Join 100+ teams across Madhya Pradesh. Ideate. Build. Scale.
                     </p>
                 </ScrollReveal>
 
@@ -61,20 +61,20 @@ export default function CTASection() {
                 <ScrollReveal delay={0.5} className="mt-16">
                     <div className="flex flex-wrap justify-center gap-12 text-center">
                         <div>
-                            <div className="text-3xl md:text-4xl font-bold gradient-text">1,200+</div>
-                            <div className="text-sm text-white/50 mt-1">Hackers</div>
+                            <div className="text-3xl md:text-4xl font-bold gradient-text">100+</div>
+                            <div className="text-sm text-white/50 mt-1">Teams</div>
                         </div>
                         <div>
-                            <div className="text-3xl md:text-4xl font-bold gradient-text">150+</div>
-                            <div className="text-sm text-white/50 mt-1">Projects</div>
+                            <div className="text-3xl md:text-4xl font-bold gradient-text">300-400</div>
+                            <div className="text-sm text-white/50 mt-1">Innovators</div>
                         </div>
                         <div>
-                            <div className="text-3xl md:text-4xl font-bold gradient-text">30+</div>
-                            <div className="text-sm text-white/50 mt-1">Countries</div>
+                            <div className="text-3xl md:text-4xl font-bold gradient-text">6</div>
+                            <div className="text-sm text-white/50 mt-1">Tracks</div>
                         </div>
                         <div>
-                            <div className="text-3xl md:text-4xl font-bold gradient-text">$100k+</div>
-                            <div className="text-sm text-white/50 mt-1">Awarded</div>
+                            <div className="text-3xl md:text-4xl font-bold gradient-text">₹60k</div>
+                            <div className="text-sm text-white/50 mt-1">Prize Pool</div>
                         </div>
                     </div>
                 </ScrollReveal>

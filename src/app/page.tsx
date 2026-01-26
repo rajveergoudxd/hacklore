@@ -3,11 +3,14 @@ import Footer from "@/components/layout/Footer";
 import FloatingCTA from "@/components/layout/FloatingCTA";
 import Hero from "@/components/sections/Hero";
 import AboutSection from "@/components/sections/AboutSection";
-import TracksSection from "@/components/sections/TracksSection";
-import ScheduleSection from "@/components/sections/ScheduleSection";
+import ImmersiveTracks from "@/components/sections/ImmersiveTracks";
+import HorizontalJourney from "@/components/sections/HorizontalJourney";
 import SponsorsSection from "@/components/sections/SponsorsSection";
+import BecomeSponsor from "@/components/sections/BecomeSponsor";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
+import CartoonElements from "@/components/decorative/CartoonElements";
+
 
 export default function Home() {
   return (
@@ -22,6 +25,9 @@ export default function Home() {
         aria-hidden="true"
       />
 
+      {/* Cartoon Floating Elements */}
+      <CartoonElements />
+
       {/* Main Content */}
       <div className="relative z-10 flex flex-col min-h-screen">
         <Navigation />
@@ -29,9 +35,10 @@ export default function Home() {
         <main className="flex-grow">
           <Hero />
           <AboutSection />
-          <TracksSection />
-          <ScheduleSection />
+          <ImmersiveTracks />
+          <HorizontalJourney />
           <SponsorsSection />
+          <BecomeSponsor />
           <FAQSection />
           <CTASection />
         </main>

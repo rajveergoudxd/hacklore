@@ -25,40 +25,40 @@ export default function AboutSection() {
 
                         <ScrollReveal delay={0.1}>
                             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 leading-tight">
-                                Where <span className="gradient-text">ideas</span> become <br />
-                                <span className="text-outline text-outline-hover cursor-default inline-block">reality</span>
+                                Fostering the <span className="gradient-text">Next Generation</span> of <br />
+                                <span className="text-outline text-outline-hover cursor-default inline-block">Founders</span>
                             </h2>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.2}>
                             <p className="text-white/70 text-lg leading-relaxed mb-6">
-                                Hacklore is more than a hackathon—it&apos;s a 48-hour journey where
-                                the brightest minds converge to build solutions that matter. From
-                                AI to sustainability, we challenge you to push boundaries.
+                                Innovation and entrepreneurship are critical drivers of sustainable economic development.
+                                This hackathon provides a structured platform for students to ideate, build, and present
+                                technology-driven solutions addressing real-world challenges.
                             </p>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.3}>
                             <p className="text-white/70 text-lg leading-relaxed mb-8">
-                                Join our community of innovators, meet industry mentors, and
-                                compete for over $50,000 in prizes. Whether you&apos;re a seasoned
-                                developer or just starting out, there&apos;s a place for you here.
+                                Join our community of innovators, meet industry mentors and experts, and
+                                compete for ₹60,000 in prizes. Whether you&apos;re a first-time hacker or a
+                                seasoned developer, this is your launchpad to scale your ideas.
                             </p>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.4}>
                             <div className="flex flex-wrap gap-4">
                                 <div className="px-4 py-2 rounded-full glass-panel text-sm">
-                                    ✨ 48 Hours of Hacking
+                                    💡 Promote Innovation Culture
                                 </div>
                                 <div className="px-4 py-2 rounded-full glass-panel text-sm">
-                                    🎯 6 Unique Tracks
+                                    🛠️ Tech-Driven Solutions
                                 </div>
                                 <div className="px-4 py-2 rounded-full glass-panel text-sm">
-                                    🏆 $50k+ in Prizes
+                                    🏆 ₹60,000 Prize Pool
                                 </div>
                                 <div className="px-4 py-2 rounded-full glass-panel text-sm">
-                                    🌍 Hybrid Event
+                                    🤝 Industry Expert Mentors
                                 </div>
                             </div>
                         </ScrollReveal>
@@ -77,33 +77,33 @@ export default function AboutSection() {
                                         {/* Feature 1 */}
                                         <div className="flex items-start gap-4">
                                             <div className="w-12 h-12 rounded-2xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                                                <span className="text-2xl">🚀</span>
+                                                <span className="text-2xl">💡</span>
                                             </div>
                                             <div>
-                                                <h4 className="font-semibold mb-1">Launch Your Ideas</h4>
-                                                <p className="text-white/60 text-sm">Turn concepts into working prototypes in just 48 hours.</p>
+                                                <h4 className="font-semibold mb-1">Culture of Innovation</h4>
+                                                <p className="text-white/60 text-sm">Promote innovation and startup culture among students across Madhya Pradesh.</p>
                                             </div>
                                         </div>
 
                                         {/* Feature 2 */}
                                         <div className="flex items-start gap-4">
                                             <div className="w-12 h-12 rounded-2xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
-                                                <span className="text-2xl">🤝</span>
+                                                <span className="text-2xl">🛠️</span>
                                             </div>
                                             <div>
-                                                <h4 className="font-semibold mb-1">Connect & Collaborate</h4>
-                                                <p className="text-white/60 text-sm">Network with like-minded innovators from around the world.</p>
+                                                <h4 className="font-semibold mb-1">Real-World Solutions</h4>
+                                                <p className="text-white/60 text-sm">Build tech-driven solutions for societal, industrial, and governance challenges.</p>
                                             </div>
                                         </div>
 
                                         {/* Feature 3 */}
                                         <div className="flex items-start gap-4">
                                             <div className="w-12 h-12 rounded-2xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                                                <span className="text-2xl">📚</span>
+                                                <span className="text-2xl">🤝</span>
                                             </div>
                                             <div>
-                                                <h4 className="font-semibold mb-1">Learn from Experts</h4>
-                                                <p className="text-white/60 text-sm">Access workshops and mentorship from industry leaders.</p>
+                                                <h4 className="font-semibold mb-1">Connect with Experts</h4>
+                                                <p className="text-white/60 text-sm">Interact with mentors, industry professionals, and government initiatives.</p>
                                             </div>
                                         </div>
                                     </div>

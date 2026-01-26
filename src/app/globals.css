@@ -277,3 +277,211 @@ html {
   pointer-events: none;
   z-index: 999;
 }
+
+/* ===== CARTOON STYLE ENHANCEMENTS ===== */
+
+/* Bouncy entrance animation */
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  70% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Wiggle animation */
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+
+/* Pop animation on hover */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-pop:hover {
+  animation: pop 0.3s ease-in-out;
+}
+
+/* Hand-drawn style borders */
+.hand-drawn-border {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: 2px solid var(--primary);
+}
+
+/* Cartoon shadow effect */
+.cartoon-shadow {
+  box-shadow:
+    4px 4px 0 rgba(0, 0, 0, 0.2),
+    8px 8px 0 rgba(242, 162, 13, 0.1);
+}
+
+.cartoon-shadow:hover {
+  box-shadow:
+    2px 2px 0 rgba(0, 0, 0, 0.2),
+    4px 4px 0 rgba(242, 162, 13, 0.1);
+  transform: translate(2px, 2px);
+}
+
+/* Doodle underline */
+.doodle-underline {
+  position: relative;
+}
+
+.doodle-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: url("data:image/svg+xml,%3Csvg width='100' height='8' viewBox='0 0 100 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4 Q25 0 50 4 T100 4' stroke='%23f2a20d' stroke-width='2' fill='none'/%3E%3C/svg%3E") repeat-x;
+  background-size: 50px 8px;
+}
+
+/* Rotated card effect */
+.card-rotate-left {
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.card-rotate-left:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.card-rotate-right {
+  transform: rotate(2deg);
+  transition: transform 0.3s ease;
+}
+
+.card-rotate-right:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* Floating emoji animation */
+@keyframes float-emoji {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+
+  75% {
+    transform: translateY(5px) rotate(-5deg);
+  }
+}
+
+.animate-float-emoji {
+  animation: float-emoji 4s ease-in-out infinite;
+}
+
+/* Sparkle burst effect */
+@keyframes sparkle-burst {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.sparkle-burst::before {
+  content: '✨';
+  position: absolute;
+  animation: sparkle-burst 0.6s ease-out forwards;
+}
+
+/* Rainbow gradient text */
+.rainbow-text {
+  background: linear-gradient(90deg,
+      #ff6b6b, #feca57, #48dbfb, #ff9ff3, #54a0ff, #5f27cd);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-flow 3s linear infinite;
+}
+
+@keyframes rainbow-flow {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Squish effect on click */
+.squish:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
+
+/* Blob shape mask */
+.blob-mask {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%,
+      70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+/* Confetti explosion */
+@keyframes confetti {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100px) rotate(720deg);
+    opacity: 0;
+  }
+}
