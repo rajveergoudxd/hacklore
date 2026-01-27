@@ -7,7 +7,7 @@ import type { MetadataRoute } from 'next'
  * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hacklore.com'
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hacklore.vercel.app'
     const currentDate = new Date()
 
     return [
