@@ -9,45 +9,38 @@ import SponsorsSection from "@/components/sections/SponsorsSection";
 import BecomeSponsor from "@/components/sections/BecomeSponsor";
 import FAQSection from "@/components/sections/FAQSection";
 import CTASection from "@/components/sections/CTASection";
-import CartoonElements from "@/components/decorative/CartoonElements";
+import InteractiveBackground from "@/components/decorative/InteractiveBackground";
+import { MouseProvider } from "@/components/animations/MouseSensitive";
 
 
 export default function Home() {
   return (
-    <div className="min-h-screen relative noise-overlay">
-      {/* Fluid Background Layer */}
-      <div
-        className="fixed inset-0 z-0 pointer-events-none fluid-bg opacity-80"
-        aria-hidden="true"
-      />
-      <div
-        className="fixed inset-0 z-0 pointer-events-none bg-molten-chrome"
-        aria-hidden="true"
-      />
+    <MouseProvider>
+      <div className="min-h-screen relative">
+        {/* Interactive Dot Grid - z-0, visible everywhere */}
+        <InteractiveBackground />
 
-      {/* Cartoon Floating Elements */}
-      <CartoonElements />
+        {/* Main Content - z-10 with opaque backgrounds to hide dots */}
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Navigation />
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Navigation />
+          <main className="flex-grow">
+            <Hero />
+            <AboutSection />
+            <ImmersiveTracks />
+            <HorizontalJourney />
+            <SponsorsSection />
+            <BecomeSponsor />
+            <FAQSection />
+            <CTASection />
+          </main>
 
-        <main className="flex-grow">
-          <Hero />
-          <AboutSection />
-          <ImmersiveTracks />
-          <HorizontalJourney />
-          <SponsorsSection />
-          <BecomeSponsor />
-          <FAQSection />
-          <CTASection />
-        </main>
+          <Footer />
+        </div>
 
-        <Footer />
+        {/* Floating CTA */}
+        <FloatingCTA />
       </div>
-
-      {/* Floating CTA */}
-      <FloatingCTA />
-    </div>
+    </MouseProvider>
   );
 }

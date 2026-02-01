@@ -1,7 +1,6 @@
 'use client';
 
-import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'motion/react';
+import { motion } from 'motion/react';
 import ScrollReveal from '../animations/ScrollReveal';
 import StaggerContainer, { StaggerItem } from '../animations/StaggerContainer';
 
@@ -23,27 +22,8 @@ const tierConfig = {
 };
 
 export default function SponsorsSection() {
-    const containerRef = useRef<HTMLDivElement>(null);
-
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ['start end', 'end start']
-    });
-
-    const x = useTransform(scrollYProgress, [0, 1], ['-10%', '10%']);
-
     return (
-        <section id="sponsors" ref={containerRef} className="py-24 px-6 md:px-20 relative overflow-hidden">
-            {/* Floating Background Elements */}
-            <motion.div
-                style={{ x }}
-                className="absolute top-20 -left-20 w-96 h-96 bg-[var(--primary)]/10 rounded-full blur-3xl pointer-events-none"
-            />
-            <motion.div
-                style={{ x: useTransform(scrollYProgress, [0, 1], ['10%', '-10%']) }}
-                className="absolute bottom-20 -right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"
-            />
-
+        <section id="sponsors" className="py-24 px-6 md:px-20 relative">
             <div className="max-w-[1400px] mx-auto relative">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -124,8 +104,8 @@ export default function SponsorsSection() {
                 {/* Become a Sponsor CTA */}
                 <ScrollReveal delay={0.4} className="mt-16 text-center">
                     <motion.button
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                         className="px-8 py-4 rounded-full border border-white/20 text-white hover:border-[var(--primary)] hover:text-[var(--primary)] transition-colors"
                     >
                         Become a Sponsor →
@@ -147,14 +127,13 @@ function SponsorCard({
 
     return (
         <motion.div
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ scale: 1.03, y: -3 }}
             className={`
-        p-8 rounded-2xl border ${config.border}
-        bg-gradient-to-br ${config.bg}
-        backdrop-blur-sm cursor-pointer
-        transition-all duration-300
-        hover:shadow-[0_0_30px_rgba(242,162,13,0.2)]
-      `}
+                p-8 rounded-2xl border ${config.border}
+                bg-gradient-to-br ${config.bg}
+                backdrop-blur-sm cursor-pointer
+                transition-all duration-300
+            `}
         >
             <div className={`${config.size} mb-2 text-center`}>{sponsor.logo}</div>
             <p className="text-white/80 text-sm font-medium text-center">{sponsor.name}</p>

@@ -26,40 +26,40 @@ export default function Navigation() {
     }, []);
 
     return (
-        <header className="w-full flex justify-center py-6 px-4 fixed top-0 z-50">
+        <header className="w-full flex justify-center py-3 md:py-6 px-4 fixed top-0 z-50">
             <motion.nav
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className={`
-          glass-panel px-2 py-2 rounded-full flex items-center gap-2 max-w-fit shadow-2xl
-          transition-all duration-300
-          ${isScrolled ? 'bg-black/60' : ''}
-        `}
+                    glass-panel px-2 py-1.5 md:py-2 rounded-full flex items-center gap-1.5 md:gap-2 max-w-fit shadow-2xl
+                    transition-all duration-300
+                    ${isScrolled ? 'bg-black/60' : ''}
+                `}
             >
                 {/* Logo */}
                 <Link
                     href="/"
-                    className="h-10 w-10 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-[var(--primary)] hover:text-[var(--background)] transition-colors duration-300"
+                    className="h-8 w-8 md:h-10 md:w-10 flex items-center justify-center rounded-full bg-white/5 text-white hover:bg-[var(--primary)] hover:text-[var(--background)] transition-colors duration-300"
                 >
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        className="w-5 h-5"
+                        className="w-4 h-4 md:w-5 md:h-5"
                     >
                         <path d="M4 17l6-6-6-6M12 19h8" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                 </Link>
 
                 {/* Desktop Nav Links */}
-                <div className="hidden md:flex items-center gap-1 px-2">
+                <div className="hidden lg:flex items-center gap-1 px-2">
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
-                            className="px-4 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/5"
+                            className="px-3 py-2 text-sm font-medium text-white/70 hover:text-white transition-colors rounded-full hover:bg-white/5"
                         >
                             {link.label}
                         </Link>
@@ -70,7 +70,7 @@ export default function Navigation() {
                 <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="h-10 px-5 rounded-full bg-white text-[var(--background)] text-sm font-bold hover:bg-[var(--primary)] transition-colors"
+                    className="h-8 px-4 md:h-10 md:px-5 rounded-full bg-white text-[var(--background)] text-xs md:text-sm font-bold hover:bg-[var(--primary)] transition-colors"
                 >
                     Register
                 </motion.button>
@@ -78,9 +78,10 @@ export default function Navigation() {
                 {/* Mobile Menu Toggle */}
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="md:hidden h-10 w-10 flex items-center justify-center rounded-full bg-white/5 text-white"
+                    className="lg:hidden h-8 w-8 md:h-10 md:w-10 flex items-center justify-center rounded-full bg-white/5 text-white"
+                    aria-label="Toggle menu"
                 >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4 md:w-5 md:h-5">
                         {isMobileMenuOpen ? (
                             <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
                         ) : (
@@ -97,15 +98,15 @@ export default function Navigation() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-24 left-4 right-4 md:hidden glass-panel rounded-2xl p-4 shadow-2xl"
+                        className="absolute top-16 md:top-20 left-4 right-4 lg:hidden glass-panel rounded-2xl p-4 shadow-2xl bg-[var(--chrome-dark)]/95 backdrop-blur-xl"
                     >
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-1">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMobileMenuOpen(false)}
-                                    className="px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 rounded-xl transition-colors"
+                                    className="px-4 py-3 text-white/70 hover:text-white hover:bg-white/5 rounded-xl transition-colors text-base"
                                 >
                                     {link.label}
                                 </Link>
