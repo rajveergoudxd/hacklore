@@ -229,7 +229,7 @@ export default function Hero() {
                                     <span className="text-lg md:text-2xl">🏆</span>
                                 </div>
                                 <div>
-                                    <div className="text-xl md:text-2xl lg:text-3xl font-bold gradient-text">
+                                    <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
                                         <MouseSensitiveText sensitivity={80}>₹60K</MouseSensitiveText>
                                     </div>
                                     <div className="text-[10px] md:text-xs text-white/50">Prize Pool</div>
