@@ -5,58 +5,44 @@ import ScrollReveal from '../animations/ScrollReveal';
 
 const tracks = [
     {
-        id: 'ai-ml',
+        id: 'ai-social-good',
         icon: '🤖',
-        title: 'AI & Machine Learning',
-        tagline: 'Build intelligent solutions',
-        description: 'Develop AI-powered applications that solve real-world problems in healthcare, education, or sustainability.',
+        title: 'AI for Social Good',
+        tagline: 'Build intelligent solutions for humanity',
+        description: 'Develop AI/ML applications that tackle real-world challenges—healthcare diagnostics, accessibility tools, environmental monitoring, or educational systems. Focus on ethical AI implementations with measurable social impact.',
         color: 'from-purple-500 to-violet-600',
-        bgColor: 'bg-purple-500/10'
+        bgColor: 'bg-purple-500/10',
+        techStack: ['TensorFlow', 'PyTorch', 'Hugging Face', 'OpenCV']
     },
     {
-        id: 'fintech',
-        icon: '💰',
-        title: 'FinTech Innovation',
-        tagline: 'Reimagine finance',
-        description: 'Create solutions for digital payments, financial inclusion, or blockchain-based applications.',
-        color: 'from-emerald-400 to-teal-600',
-        bgColor: 'bg-emerald-500/10'
+        id: 'cybersecurity',
+        icon: '🔐',
+        title: 'Cybersecurity',
+        tagline: 'Defend the digital frontier',
+        description: 'Build security tools, threat detection systems, or vulnerability scanners. Explore areas like network security, cryptographic protocols, secure authentication, or privacy-preserving technologies.',
+        color: 'from-red-500 to-pink-600',
+        bgColor: 'bg-red-500/10',
+        techStack: ['Python', 'Rust', 'Wireshark', 'OWASP']
     },
     {
-        id: 'healthtech',
-        icon: '🏥',
-        title: 'HealthTech',
-        tagline: 'Transform healthcare',
-        description: 'Build telemedicine platforms, health monitoring systems, or mental wellness applications.',
-        color: 'from-red-400 to-pink-600',
-        bgColor: 'bg-red-500/10'
+        id: 'web3',
+        icon: '⛓️',
+        title: 'Web3 & Blockchain',
+        tagline: 'Decentralize the future',
+        description: 'Create decentralized applications (dApps), smart contracts, or blockchain-based solutions. Focus on DeFi, NFT utilities, DAOs, or transparent governance systems that leverage distributed ledger technology.',
+        color: 'from-blue-500 to-cyan-600',
+        bgColor: 'bg-blue-500/10',
+        techStack: ['Solidity', 'Ethereum', 'IPFS', 'Web3.js']
     },
     {
-        id: 'edtech',
-        icon: '📚',
-        title: 'EdTech Revolution',
-        tagline: 'Democratize learning',
-        description: 'Develop innovative e-learning platforms, skill development tools, or accessibility solutions.',
-        color: 'from-blue-400 to-cyan-600',
-        bgColor: 'bg-blue-500/10'
-    },
-    {
-        id: 'sustainability',
-        icon: '🌱',
-        title: 'Sustainability & GreenTech',
-        tagline: 'Save the planet',
-        description: 'Create solutions for climate change, waste management, or sustainable living.',
-        color: 'from-green-400 to-lime-600',
-        bgColor: 'bg-green-500/10'
-    },
-    {
-        id: 'openinnovation',
+        id: 'open-innovation',
         icon: '🚀',
         title: 'Open Innovation',
         tagline: 'Limitless possibilities',
-        description: 'Got a unique idea? This track is for groundbreaking solutions that don\'t fit traditional categories.',
-        color: 'from-yellow-400 to-orange-600',
-        bgColor: 'bg-yellow-500/10'
+        description: 'Got a unique idea that doesn\'t fit the other tracks? This is your playground. Build anything innovative—IoT systems, developer tools, automation scripts, or entirely new concepts. Surprise us.',
+        color: 'from-yellow-500 to-orange-600',
+        bgColor: 'bg-yellow-500/10',
+        techStack: ['Any Stack', 'Your Choice', 'Be Creative']
     }
 ];
 
@@ -78,15 +64,15 @@ export default function ImmersiveTracks() {
                     </ScrollReveal>
                     <ScrollReveal delay={0.2}>
                         <p className="text-white/60 max-w-xl mx-auto text-base md:text-lg px-4">
-                            Select your domain of innovation and build solutions that matter
+                            Pick your domain. Build something that matters. Ship it in 24 hours.
                         </p>
                     </ScrollReveal>
                 </div>
 
-                {/* Tracks Grid - 1 col on mobile, 2 on tablet, 3 on desktop */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                {/* Tracks Grid - 1 col on mobile, 2 on tablet/desktop */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                     {tracks.map((track, index) => (
-                        <ScrollReveal key={track.id} delay={index * 0.08}>
+                        <ScrollReveal key={track.id} delay={index * 0.1}>
                             <TrackCard track={track} />
                         </ScrollReveal>
                     ))}
@@ -125,9 +111,21 @@ function TrackCard({ track }: { track: typeof tracks[0] }) {
             </p>
 
             {/* Description */}
-            <p className="text-white/70 text-sm md:text-base leading-relaxed">
+            <p className="text-white/70 text-sm md:text-base leading-relaxed mb-4">
                 {track.description}
             </p>
+
+            {/* Tech Stack Tags */}
+            <div className="flex flex-wrap gap-1.5 md:gap-2">
+                {track.techStack.map((tech, i) => (
+                    <span
+                        key={i}
+                        className="px-2 md:px-3 py-0.5 md:py-1 rounded-full text-[10px] md:text-xs bg-white/10 text-white/70 border border-white/10"
+                    >
+                        {tech}
+                    </span>
+                ))}
+            </div>
         </motion.div>
     );
 }

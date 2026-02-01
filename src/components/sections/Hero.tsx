@@ -272,7 +272,7 @@ export default function Hero() {
                                 </div>
                                 <div>
                                     <div className="text-xl md:text-2xl lg:text-3xl font-bold text-white">
-                                        <MouseSensitiveText sensitivity={80}>6</MouseSensitiveText>
+                                        <MouseSensitiveText sensitivity={80}>4</MouseSensitiveText>
                                     </div>
                                     <div className="text-[10px] md:text-xs text-white/50">Tracks</div>
                                 </div>

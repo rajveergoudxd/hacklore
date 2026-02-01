@@ -11,85 +11,96 @@ export default function AboutSection() {
                     <div className="text-center lg:text-left">
                         <ScrollReveal>
                             <span className="text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] text-[var(--primary)]">
-                                About the Event
+                                What is Hacklore?
                             </span>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.1}>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-4 md:mb-6 leading-tight">
-                                Fostering the <span className="gradient-text">Next Generation</span> of <br className="hidden sm:block" />
-                                <span className="text-white">Founders</span>
+                                24 Hours. <span className="gradient-text">One Codebase.</span><br className="hidden sm:block" />
+                                <span className="text-white">Infinite Possibilities.</span>
                             </h2>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.2}>
                             <p className="text-white/70 text-base md:text-lg leading-relaxed mb-4 md:mb-6">
-                                Innovation and entrepreneurship are critical drivers of sustainable economic development.
-                                This hackathon provides a structured platform for students to ideate, build, and present
-                                technology-driven solutions addressing real-world challenges.
+                                Hacklore is a high-intensity, 24-hour continuous hackathon designed for builders
+                                who want to push their limits. No sleep breaks. No hand-holding. Just you, your
+                                team, and the code—simulating the pressure of shipping a real product under deadline.
                             </p>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.3}>
                             <p className="text-white/70 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
-                                Join our community of innovators, meet industry mentors and experts, and
-                                compete for ₹60,000 in prizes. Whether you&apos;re a first-time hacker or a
-                                seasoned developer, this is your launchpad to scale your ideas.
+                                Whether you&apos;re building an AI model, securing a network, deploying smart contracts,
+                                or hacking on something entirely new—this is your arena. Mentors from the industry
+                                will be available for technical unblocks, but the execution is on you.
                             </p>
                         </ScrollReveal>
 
                         <ScrollReveal delay={0.4}>
-                            <div className="flex flex-wrap gap-2 md:gap-4 justify-center lg:justify-start">
-                                <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm">
-                                    💡 Promote Innovation Culture
+                            <div className="flex flex-wrap gap-2 md:gap-3 justify-center lg:justify-start">
+                                <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm font-mono">
+                                    <span className="text-[var(--primary)]">$</span> git push --force
                                 </div>
-                                <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm">
-                                    🛠️ Tech-Driven Solutions
+                                <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm font-mono">
+                                    <span className="text-green-400">→</span> deployed in 24h
                                 </div>
                                 <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm">
                                     🏆 ₹60,000 Prize Pool
                                 </div>
                                 <div className="px-3 md:px-4 py-2 rounded-full glass-panel text-xs md:text-sm">
-                                    🤝 Industry Expert Mentors
+                                    👥 100+ Hackers
                                 </div>
                             </div>
                         </ScrollReveal>
                     </div>
 
-                    {/* Right Visual - Simplified */}
+                    {/* Right Visual - Technical Focus */}
                     <ScrollReveal variant="scale" delay={0.3}>
                         <div className="glass-panel rounded-2xl md:rounded-3xl p-5 md:p-8 border border-white/10 bg-[var(--chrome-dark)]/60">
-                            <div className="space-y-5 md:space-y-8">
-                                {/* Feature 1 */}
+                            <div className="space-y-5 md:space-y-6">
+                                {/* What You'll Build */}
                                 <div className="flex items-start gap-3 md:gap-4">
                                     <div className="w-10 md:w-12 h-10 md:h-12 rounded-xl md:rounded-2xl bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                                        <span className="text-xl md:text-2xl">💡</span>
+                                        <span className="text-xl md:text-2xl">⚡</span>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Culture of Innovation</h4>
-                                        <p className="text-white/60 text-xs md:text-sm">Promote innovation and startup culture among students across Madhya Pradesh.</p>
+                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Ship Real Products</h4>
+                                        <p className="text-white/60 text-xs md:text-sm">No mockups—deploy working prototypes. Judges evaluate functional code, not pitch decks.</p>
                                     </div>
                                 </div>
 
-                                {/* Feature 2 */}
+                                {/* Tech Stack Freedom */}
                                 <div className="flex items-start gap-3 md:gap-4">
                                     <div className="w-10 md:w-12 h-10 md:h-12 rounded-xl md:rounded-2xl bg-blue-500/20 flex items-center justify-center flex-shrink-0">
                                         <span className="text-xl md:text-2xl">🛠️</span>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Real-World Solutions</h4>
-                                        <p className="text-white/60 text-xs md:text-sm">Build tech-driven solutions for societal, industrial, and governance challenges.</p>
+                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Any Stack. Any Platform.</h4>
+                                        <p className="text-white/60 text-xs md:text-sm">Python, Rust, Go, TypeScript—use whatever you&apos;re fastest with. Cloud, edge, or bare metal.</p>
                                     </div>
                                 </div>
 
-                                {/* Feature 3 */}
+                                {/* Mentorship */}
                                 <div className="flex items-start gap-3 md:gap-4">
                                     <div className="w-10 md:w-12 h-10 md:h-12 rounded-xl md:rounded-2xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                                        <span className="text-xl md:text-2xl">🤝</span>
+                                        <span className="text-xl md:text-2xl">🧠</span>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Connect with Experts</h4>
-                                        <p className="text-white/60 text-xs md:text-sm">Interact with mentors, industry professionals, and government initiatives.</p>
+                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Technical Mentors On-Call</h4>
+                                        <p className="text-white/60 text-xs md:text-sm">Stuck on a bug at 3 AM? Industry engineers available for debugging sessions and architecture reviews.</p>
+                                    </div>
+                                </div>
+
+                                {/* Team Size */}
+                                <div className="flex items-start gap-3 md:gap-4">
+                                    <div className="w-10 md:w-12 h-10 md:h-12 rounded-xl md:rounded-2xl bg-amber-500/20 flex items-center justify-center flex-shrink-0">
+                                        <span className="text-xl md:text-2xl">👥</span>
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold mb-1 text-sm md:text-base">Teams of 2-4</h4>
+                                        <p className="text-white/60 text-xs md:text-sm">Small squads move fast. Bring your crew or find teammates at the event.</p>
                                     </div>
                                 </div>
                             </div>

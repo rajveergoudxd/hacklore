@@ -27,7 +27,7 @@ const faqs = [
     },
     {
         question: 'What are the focus areas/tracks?',
-        answer: 'There are 6 innovation tracks: Smart Cities & Urban Innovation, Digital Governance & Public Services, AI & Data-Driven Applications, Sustainability & Clean Energy, Healthcare & Education Technology, and Startup & MSME Enablement.'
+        answer: 'There are 4 innovation tracks: AI for Social Good (ML/AI applications with social impact), Cybersecurity (security tools and threat detection), Web3 & Blockchain (dApps, smart contracts, DeFi), and Open Innovation (anything goes—surprise us!).'
     }
 ];
 

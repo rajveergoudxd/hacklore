@@ -35,6 +35,7 @@ export function useMousePosition() {
 interface MouseSensitiveTextProps {
     children: ReactNode;
     className?: string;
+    style?: React.CSSProperties;
     sensitivity?: number; // How close the mouse needs to be (default 150px)
     maxScale?: number; // Maximum scale factor (default 1.05)
     as?: 'span' | 'div' | 'p' | 'h1' | 'h2' | 'h3' | 'h4';
@@ -43,6 +44,7 @@ interface MouseSensitiveTextProps {
 export function MouseSensitiveText({
     children,
     className = '',
+    style = {},
     sensitivity = 150,
     maxScale = 1.03,
     as: Component = 'span'
@@ -73,9 +75,11 @@ export function MouseSensitiveText({
 
     return (
         <Component
-            ref={ref as React.RefObject<HTMLSpanElement>}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            ref={ref as any}
             className={className}
             style={{
+                ...style,
                 transform: `scale(${scale})`,
                 transition: 'transform 0.15s ease-out',
                 display: 'inline-block',
